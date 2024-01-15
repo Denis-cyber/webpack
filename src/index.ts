@@ -1,4 +1,4 @@
 import { calc } from "./test";
 
 console.log("Pavel Topsky!");
-console.log(calc(10, 7));
+console.log(calc(10, 77));
