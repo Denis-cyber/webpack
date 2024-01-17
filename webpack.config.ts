@@ -4,8 +4,6 @@ import webpack from "webpack";
 import { buildWebpack } from "./config/build/buildWebpack";
 import { BuildMode, BuildPaths } from "./config/build/types";
 
-type Mode = "production" | "development";
-
 interface EnvVariables {
   mode: BuildMode;
   port: number;
