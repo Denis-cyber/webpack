@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import classes from "./App.module.scss";
+import { About } from "@/pages/about";
 
 export const App = () => {
   const [count, setCount] = useState(0);
@@ -14,7 +15,7 @@ export const App = () => {
       <button className={classes.button} onClick={() => setCount((prev) => prev + 1)}>
         Increment
       </button>
-      <Outlet />
+      <About />
     </div>
   );
 };

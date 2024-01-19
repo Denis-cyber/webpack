@@ -1,11 +1,9 @@
 import { Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { App } from "./components/App";
-import { About } from "./pages/about";
-import { Shop } from "./pages/shop";
-// import About from "./pages/about/About";
-// import Shop from "./pages/shop/Shop";
+import { App } from "@/components/App/App";
+import { About } from "@/pages/about";
+import { Shop } from "@/pages/shop";
 
 const root = document.getElementById("root");
 
@@ -27,7 +25,6 @@ const router = createBrowserRouter([
             <About />
           </Suspense>
         ),
-        // element: <About />,
       },
       {
         path: "/shop",
@@ -36,7 +33,6 @@ const router = createBrowserRouter([
             <Shop />
           </Suspense>
         ),
-        // element: <Shop />,
       },
     ],
   },
