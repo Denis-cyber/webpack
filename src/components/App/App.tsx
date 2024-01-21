@@ -6,11 +6,30 @@ import tigerPng from "@/assets/tiger.png";
 import boulevardJpg from "@/assets/boulevard.jpg";
 import StarSvg from "@/assets/star.svg";
 
+// function todo(a: number) {
+//   console.log("todofunction");
+// }
+
 export const App = () => {
   const [count, setCount] = useState(0);
 
+  // todo(888);
+
+  // if (__PLATFORM__ === "desktop") {
+  //   return <div>IS DESKTOP PLATFORM</div>;
+  // }
+
+  // if (__PLATFORM__ === "mobile") {
+  //   return <div>IS MOBILE PLATFORM</div>;
+  // }
+
+  // if (__ENV__ === "development") {
+  //   // addDevtools()
+  // }
+
   return (
     <div>
+      <h1>PLATFORM={__PLATFORM__}</h1>
       <Link to='/about'>about</Link>
       <br />
       <Link to='/shop'>shop</Link>
