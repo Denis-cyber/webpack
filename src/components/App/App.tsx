@@ -28,8 +28,8 @@ export const App = () => {
   // }
 
   return (
-    <div>
-      <h1>PLATFORM={__PLATFORM__}</h1>
+    <div data-testid={"App.DataTestId"}>
+      <h1 data-testid={"Platform"}>PLATFORM={__PLATFORM__}</h1>
       <Link to='/about'>about</Link>
       <br />
       <Link to='/shop'>shop</Link>
