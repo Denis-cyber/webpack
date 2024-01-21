@@ -6,14 +6,16 @@ import tigerPng from "@/assets/tiger.png";
 import boulevardJpg from "@/assets/boulevard.jpg";
 import StarSvg from "@/assets/star.svg";
 
-// function todo(a: number) {
-//   console.log("todofunction");
-// }
+function todo() {
+  todoTwo();
+}
+
+function todoTwo() {
+  throw new Error();
+}
 
 export const App = () => {
   const [count, setCount] = useState(0);
-
-  // todo(888);
 
   // if (__PLATFORM__ === "desktop") {
   //   return <div>IS DESKTOP PLATFORM</div>;
@@ -34,7 +36,7 @@ export const App = () => {
       <br />
       <Link to='/shop'>shop</Link>
       <h1 className={classes.value}>{count}</h1>
-      <button className={classes.button} onClick={() => setCount((prev) => prev + 1)}>
+      <button className={classes.button} onClick={todo}>
         Increment
       </button>
       <div>
